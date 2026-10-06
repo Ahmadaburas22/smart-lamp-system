@@ -4,6 +4,12 @@ print("=== Smart Lamp Simulator V1 ===")
 motion = input("Is motion detected? (yes/no): ").lower()
 light_level = int(input("Enter light level (0-100): "))
 
+print("\n--- Sensor Status ---")
+print(f"Motion: {motion}")
+print(f"Light Level: {light_level}")
+print("---------------------")
+
+
 # Decide if the lamp should turn on
 if motion == "yes" and light_level < 50:
     print("💡 Lamp ON")
